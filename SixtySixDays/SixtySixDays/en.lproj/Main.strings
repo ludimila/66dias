@@ -1,0 +1,18 @@
+
+/* Class = "UIBarButtonItem"; title = "Perfil"; ObjectID = "2fT-zM-il3"; */
+"2fT-zM-il3.title" = "Profile";
+
+/* Class = "UIBarButtonItem"; title = "Metas"; ObjectID = "fa0-H1-gFM"; */
+"fa0-H1-gFM.title" = "Goals";
+
+/* Class = "UINavigationItem"; title = "Principal"; ObjectID = "xYZ-9Z-eJa"; */
+"xYZ-9Z-eJa.title" = "Main";
+
+/* Class = "UILabel"; accessibilityHint = "Change the idiom to we see if the portugues works too"; ObjectID = "y3c-9d-VC2"; */
+"y3c-9d-VC2.accessibilityHint" = "Change the idiom to we see if the portugues works too";
+
+/* Class = "UILabel"; accessibilityLabel = "Your idiom is the English"; ObjectID = "y3c-9d-VC2"; */
+"y3c-9d-VC2.accessibilityLabel" = "Your idiom is the English";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "y3c-9d-VC2"; */
+"y3c-9d-VC2.text" = "English";

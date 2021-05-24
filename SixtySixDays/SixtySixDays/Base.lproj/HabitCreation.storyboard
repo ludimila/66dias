@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jNn-Fa-h7o">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metas pré cadastradas-->
+        <scene sceneID="BrU-C7-jF2">
+            <objects>
+                <viewController id="jNn-Fa-h7o" userLabel="Metas pré cadastradas" customClass="PreRegisterGoalsViewController" customModule="SixtySixDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Lr2-ow-aZr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jwG-zu-fn8">
+                            <size key="itemSize" width="157" height="202"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Vhc-Lr-hvC" customClass="PreRegisterGoalsCollectionViewCell" customModule="SixtySixDays" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="157" height="202"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hJ-DJ-lsR">
+                                            <rect key="frame" x="36" y="23" width="85" height="90"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPR-2w-E8p">
+                                            <rect key="frame" x="21" y="146" width="123" height="21"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageCategory" destination="7hJ-DJ-lsR" id="BhH-tl-zpn"/>
+                                    <outlet property="nameCategory" destination="aPR-2w-E8p" id="Mv5-sn-Glh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jNn-Fa-h7o" id="qKf-mh-7I2"/>
+                            <outlet property="delegate" destination="jNn-Fa-h7o" id="H2x-ym-TEd"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="dxL-7t-xP5" kind="show" identifier="showHabits" id="Uqa-zC-Cux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsV-kO-pys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="534"/>
+        </scene>
+        <!--Lista de metas pre cadastradas-->
+        <scene sceneID="dgd-BD-xE8">
+            <objects>
+                <tableViewController id="dxL-7t-xP5" userLabel="Lista de metas pre cadastradas" customClass="PreRegisterHabitsTableViewController" customModule="SixtySixDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="e6O-Ps-hSh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="X4V-Uf-oHl">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X4V-Uf-oHl" id="OQN-fg-FBr">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dxL-7t-xP5" id="7Hj-Vl-g1y"/>
+                            <outlet property="delegate" destination="dxL-7t-xP5" id="4zy-0k-DLY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkf-Mi-Fmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="534"/>
+        </scene>
+        <!--Adicionar Hábito-->
+        <scene sceneID="Xev-Uq-g9V">
+            <objects>
+                <tableViewController storyboardIdentifier="AddHabitTableViewController" id="lL3-TO-IUh" customClass="AddHabitTableViewController" customModule="SixtySixDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="GKh-Pe-gxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Nome" id="78b-DG-bKR">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2gu-lh-5eg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2gu-lh-5eg" id="ia2-y5-pLf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Insira o nome do hábito" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHR-NY-TPD">
+                                                    <rect key="frame" x="8" y="15" width="584" height="17"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Nome do hábito" label="Nome"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aHR-NY-TPD" firstAttribute="leading" secondItem="ia2-y5-pLf" secondAttribute="leadingMargin" id="PQy-MI-b5s"/>
+                                                <constraint firstAttribute="centerY" secondItem="aHR-NY-TPD" secondAttribute="centerY" constant="-1" id="YeD-Nk-Om9"/>
+                                                <constraint firstItem="aHR-NY-TPD" firstAttribute="trailing" secondItem="ia2-y5-pLf" secondAttribute="trailingMargin" id="dVn-WM-1KL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Privacidade" id="N1N-Ou-FLt">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pis-F7-RDJ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pis-F7-RDJ" id="XN2-1j-7qh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yrd-hd-IPv">
+                                                    <rect key="frame" x="187" y="8" width="226" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="226" id="VD4-Tg-la8"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="Público"/>
+                                                        <segment title="Privado"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="yrd-hd-IPv" secondAttribute="centerX" id="5ig-KR-IkC"/>
+                                                <constraint firstAttribute="centerY" secondItem="yrd-hd-IPv" secondAttribute="centerY" id="VgI-6q-zIf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lL3-TO-IUh" id="gAp-04-ZCK"/>
+                            <outlet property="delegate" destination="lL3-TO-IUh" id="dhd-fi-KLA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Adicionar Hábito" id="tWv-FY-1Y3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ypf-Mb-5ST">
+                            <connections>
+                                <action selector="saveClick:" destination="lL3-TO-IUh" id="l0U-KQ-AtL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="nameTxtLabel" destination="aHR-NY-TPD" id="AwB-SH-XTK"/>
+                        <outlet property="privacySegmented" destination="yrd-hd-IPv" id="9YT-zk-krB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtF-mn-usx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-541" y="534"/>
+        </scene>
+    </scenes>
+</document>

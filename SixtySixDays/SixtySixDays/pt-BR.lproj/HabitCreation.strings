@@ -1,0 +1,24 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Nome"; ObjectID = "78b-DG-bKR"; */
+"78b-DG-bKR.headerTitle" = "Nome";
+
+/* Class = "UITableViewSection"; headerTitle = "Privacidade"; ObjectID = "N1N-Ou-FLt"; */
+"N1N-Ou-FLt.headerTitle" = "Privacidade";
+
+/* Class = "UITextField"; accessibilityHint = "Nome do hábito"; ObjectID = "aHR-NY-TPD"; */
+"aHR-NY-TPD.accessibilityHint" = "Nome do hábito";
+
+/* Class = "UITextField"; accessibilityLabel = "Nome"; ObjectID = "aHR-NY-TPD"; */
+"aHR-NY-TPD.accessibilityLabel" = "Nome";
+
+/* Class = "UITextField"; placeholder = "Insira o nome do hábito"; ObjectID = "aHR-NY-TPD"; */
+"aHR-NY-TPD.placeholder" = "Insira o nome do hábito";
+
+/* Class = "UINavigationItem"; title = "Adicionar Hábito"; ObjectID = "tWv-FY-1Y3"; */
+"tWv-FY-1Y3.title" = "Adicionar Hábito";
+
+/* Class = "UISegmentedControl"; yrd-hd-IPv.segmentTitles[0] = "Público"; ObjectID = "yrd-hd-IPv"; */
+"yrd-hd-IPv.segmentTitles[0]" = "Público";
+
+/* Class = "UISegmentedControl"; yrd-hd-IPv.segmentTitles[1] = "Privado"; ObjectID = "yrd-hd-IPv"; */
+"yrd-hd-IPv.segmentTitles[1]" = "Privado";

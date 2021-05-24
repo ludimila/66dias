@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SixtySixDays
+
+  Created by Beatriz Rezener Dourado Matos on 20/07/15.
+  Copyright (c) 2015 SixtySixDays. All rights reserved.
+*/
+
+// MARK: - HabitsList
+DELETE = "Deletar";
+DELETE_CONFIRMATION = "Você tem certeza?";
+CONFIRM = "Confirmar";
+CANCEL = "Cancelar";
+DAY = "Dia";

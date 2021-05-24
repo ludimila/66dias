@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>Saúde</string>
+		<key>imageCategory</key>
+		<string>Health.png</string>
+		<key>arrayHabits</key>
+		<array>
+			<string>Comer frutas</string>
+			<string>Beber água</string>
+			<string>Usar fio dental</string>
+			<string>Menos doces</string>
+			<string>Escovar os dentes 3x ao dia</string>
+			<string>Dormir bem</string>
+			<string>Usar filtro solar</string>
+			<string>Não comer fritura</string>
+			<string>Comer verde</string>
+			<string>Comer integral</string>
+			<string>Seguir a dieta</string>
+			<string>Fazer todas as refeições</string>
+			<string>Praticar exercício</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Social</string>
+		<key>imageCategory</key>
+		<string>Social.png</string>
+		<key>arrayHabits</key>
+		<array>
+			<string>Fazer uma boa ação</string>
+			<string>Dizer eu te amo</string>
+			<string>Socializar</string>
+			<string>Não falar palavrão</string>
+			<string>Fazer um elogio por dia</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Criatividade</string>
+		<key>imageCategory</key>
+		<string>Creativity.png</string>
+		<key>arrayHabits</key>
+		<array>
+			<string>Ler</string>
+			<string>Aprender uma nova palavra</string>
+			<string>Ler/assistir Jornal</string>
+			<string>Ouvir uma música nova</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Organização</string>
+		<key>imageCategory</key>
+		<string>Organization.png</string>
+		<key>arrayHabits</key>
+		<array>
+			<string>Arrumar a cama</string>
+			<string>Lavar a louça</string>
+			<string>Varrer a casa</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Pessoal</string>
+		<key>imageCategory</key>
+		<string>Personal.png</string>
+		<key>arrayHabits</key>
+		<array>
+			<string>Meditar</string>
+			<string>Controlar Gastos</string>
+			<string>Anotar gastos</string>
+			<string>Estudar diariamente</string>
+		</array>
+	</dict>
+</array>
+</plist>

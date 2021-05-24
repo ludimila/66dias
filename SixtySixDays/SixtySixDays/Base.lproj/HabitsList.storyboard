@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E5l-Rf-YAf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Hábitos-->
+        <scene sceneID="XUt-1L-74X">
+            <objects>
+                <navigationController id="E5l-Rf-YAf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hábitos" id="i5L-Jr-HBf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4G-lJ-yry">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2WJ-OG-TtV" kind="relationship" relationship="rootViewController" id="lPG-ip-ggb"/>
+                        <segue destination="GTj-OT-sqh" kind="show" identifier="segueInit" id="7rG-Bc-R2c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X80-KQ-WCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="581"/>
+        </scene>
+        <!--Minhas metas-->
+        <scene sceneID="IGI-lR-esH">
+            <objects>
+                <tableViewController id="2WJ-OG-TtV" customClass="HabitsListTableViewController" customModule="SixtySixDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="djy-P4-RoB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="j7T-11-HG9" detailTextLabel="vAa-XO-xNw" style="IBUITableViewCellStyleSubtitle" id="iKz-gU-xyu">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKz-gU-xyu" id="rnK-k3-ay1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j7T-11-HG9">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAa-XO-xNw">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2WJ-OG-TtV" id="Ak7-Ku-Lx8"/>
+                            <outlet property="delegate" destination="2WJ-OG-TtV" id="5Hc-xf-Ymg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Minhas metas" id="27h-9g-ugD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gOv-4w-lKT">
+                            <connections>
+                                <action selector="addClick:" destination="2WJ-OG-TtV" id="Ahw-uo-cIf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cs9-34-kuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="581"/>
+        </scene>
+        <!--Init View Controller-->
+        <scene sceneID="nmt-vT-hox">
+            <objects>
+                <viewController storyboardIdentifier="InitViewController" id="GTj-OT-sqh" customClass="InitViewController" customModule="SixtySixDays" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3D-4N-tjg"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8z-c1-Pr7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sDQ-Jb-rZL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bem vindo!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj7-D1-JcL">
+                                <rect key="frame" x="41" y="97" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-3L-ird">
+                                <rect key="frame" x="246" y="313" width="108" height="30"/>
+                                <state key="normal" title="Adicionar meta!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addClick:" destination="GTj-OT-sqh" eventType="touchUpInside" id="Bra-Og-oxU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Fum-3L-ird" secondAttribute="centerY" constant="-28" id="ZKs-Fd-B1j"/>
+                            <constraint firstAttribute="centerX" secondItem="Fum-3L-ird" secondAttribute="centerX" id="ey7-uM-moD"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGH-Kh-Iw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="-161"/>
+        </scene>
+    </scenes>
+</document>
